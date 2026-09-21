@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorban Tahura | Professional Portfolio</title>
+<style>
+:root{
+  --primary:#173f5f;
+  --secondary:#20639b;
+  --accent:#3caea3;
+  --light:#f4f8fb;
+  --text:#263238;
+  --muted:#607d8b;
+  --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--light);line-height:1.65}
+nav{
+  position:fixed;top:0;left:0;width:100%;z-index:10;
+  background:rgba(23,63,95,.96);padding:14px 7%;
+  display:flex;justify-content:space-between;align-items:center;
+  box-shadow:0 2px 12px rgba(0,0,0,.12)
+}
+.logo{color:white;font-weight:700;font-size:1.15rem}
+nav a{color:white;text-decoration:none;margin-left:22px;font-size:.92rem}
+nav a:hover{color:#8ee3dc}
+.hero{
+  min-height:92vh;padding:130px 8% 70px;display:flex;align-items:center;
+  background:linear-gradient(135deg,#173f5f 0%,#20639b 62%,#3caea3 100%);
+  color:white;
+}
+.hero-content{max-width:850px}
+.eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:.85rem;opacity:.85}
+h1{font-size:clamp(2.7rem,7vw,5.3rem);line-height:1.05;margin:18px 0}
+.hero p{font-size:1.15rem;max-width:680px;opacity:.94}
+.buttons{margin-top:30px}
+.btn{
+  display:inline-block;padding:12px 22px;border-radius:30px;text-decoration:none;
+  margin-right:10px;margin-bottom:10px;font-weight:700
+}
+.btn-light{background:white;color:var(--primary)}
+.btn-outline{border:1px solid white;color:white}
+section{padding:85px 8%;max-width:1200px;margin:auto}
+.section-title{color:var(--primary);font-size:2rem;margin-bottom:12px}
+.section-subtitle{color:var(--muted);margin-bottom:35px}
+.about-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:30px}
+.card{
+  background:white;padding:28px;border-radius:18px;
+  box-shadow:0 8px 28px rgba(23,63,95,.08)
+}
+.info-list{list-style:none}
+.info-list li{padding:8px 0;border-bottom:1px solid #e9eef2}
+.info-list li:last-child{border-bottom:0}
+.timeline{position:relative;margin-top:25px}
+.timeline-item{border-left:3px solid var(--accent);padding:0 0 30px 25px;margin-left:8px}
+.timeline-item:last-child{padding-bottom:0}
+.year{color:var(--secondary);font-weight:700;font-size:.9rem}
+.degree{font-size:1.2rem;font-weight:700;color:var(--primary)}
+.result{display:inline-block;margin-top:7px;background:#e9f6f4;color:#176b64;padding:3px 10px;border-radius:15px;font-size:.85rem}
+.skills{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.skill{background:#e8f1f8;color:var(--primary);padding:9px 15px;border-radius:22px;font-weight:600}
+.project{
+  display:grid;grid-template-columns:1fr 2fr;gap:25px;align-items:start
+}
+.project-tag{color:var(--accent);font-weight:700;text-transform:uppercase;font-size:.8rem;letter-spacing:1px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-item{padding:18px 0;border-bottom:1px solid #e4ebef}
+.contact-item strong{display:block;color:var(--primary)}
+footer{text-align:center;background:var(--primary);color:white;padding:28px 8%;font-size:.9rem}
+@media(max-width:760px){
+  nav{padding:12px 5%}.logo{font-size:1rem}nav div{display:none}
+  .hero{padding:115px 7% 65px}
+  section{padding:65px 7%}
+  .about-grid,.project,.contact-grid{grid-template-columns:1fr}
+  h1{font-size:3rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">SORBAN TAHURA</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#training">Training</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Education Graduate • Research Enthusiast</div>
+    <h1>Sorban Tahura</h1>
+    <p>
+      Bachelor of Education graduate from the Institute of Education & Research,
+      University of Dhaka, with an interest in education, teaching, research,
+      and professional development.
+    </p>
+    <div class="buttons">
+      <a class="btn btn-light" href="#contact">Contact Me</a>
+      <a class="btn btn-outline" href="#education">View Education</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p class="section-subtitle">A brief professional profile</p>
+  <div class="about-grid">
+    <div class="card">
+      <p>
+        I am Sorban Tahura, a Bachelor of Education graduate from the Institute
+        of Education & Research, University of Dhaka. I aim to build a
+        professional career in a challenging and dynamic environment where I
+        can apply my academic knowledge, skills, and dedication while
+        contributing effectively to organizational growth and continuing my
+        personal and professional development.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Personal Information</h3>
+      <ul class="info-list">
+        <li><strong>Date of Birth:</strong> 12 January 2001</li>
+        <li><strong>Nationality:</strong> Bangladeshi</li>
+        <li><strong>Marital Status:</strong> Single</li>
+        <li><strong>Languages:</strong> Bangla, English</li>
+        <li><strong>Location:</strong> Mirpur, Dhaka</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="section-title">Education</h2>
+  <p class="section-subtitle">Academic qualifications</p>
+  <div class="card timeline">
+    <div class="timeline-item">
+      <div class="year">2024</div>
+      <div class="degree">Bachelor of Education (Honors)</div>
+      <p>Institute of Education & Research, University of Dhaka</p>
+      <span class="result">CGPA: 3.48</span>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2020</div>
+      <div class="degree">Higher Secondary Certificate (HSC)</div>
+      <p>Kapasgola City Corporation Mahila College, Chittagong</p>
+      <span class="result">GPA: 5.00</span>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2018</div>
+      <div class="degree">Secondary School Certificate (SSC)</div>
+      <p>Rotary Betagi Union High School, Chittagong</p>
+      <span class="result">GPA: 5.00</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <p class="section-subtitle">Core technical and language skills</p>
+  <div class="card">
+    <div class="skills">
+      <span class="skill">MS Word</span>
+      <span class="skill">MS PowerPoint</span>
+      <span class="skill">MS Excel</span>
+      <span class="skill">Bangla — Native</span>
+      <span class="skill">English — Good</span>
+      <span class="skill">Teaching Practice</span>
+      <span class="skill">Communication</span>
+    </div>
+  </div>
+</section>
+
+<section id="training">
+  <h2 class="section-title">Training & Workshop</h2>
+  <p class="section-subtitle">Practical learning experiences</p>
+  <div class="project card">
+    <div>
+      <div class="project-tag">Professional Experience</div>
+      <h3>Teaching Practice</h3>
+    </div>
+    <div>
+      <p>Participated in teaching practice during the B.Ed program, gaining practical exposure to classroom teaching and educational activities.</p>
+      <br>
+      <p><strong>Training:</strong> Training at BCSIR School and College, Dhaka.</p>
+    </div>
+  </div>
+</section>
+
+<section id="career">
+  <h2 class="section-title">Career Objective</h2>
+  <p class="section-subtitle">Professional direction</p>
+  <div class="card">
+    <p>
+      To develop a professional career in a challenging and dynamic environment
+      where I can utilize my academic knowledge, skills, and dedication to
+      contribute effectively to the growth of the organization while enhancing
+      my personal and professional development.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p class="section-subtitle">Get in touch</p>
+  <div class="card contact-grid">
+    <div>
+      <div class="contact-item"><strong>Phone</strong>01635810692</div>
+      <div class="contact-item"><strong>Email</strong>tahuractg31@gmail.com</div>
+    </div>
+    <div>
+      <div class="contact-item"><strong>Present Address</strong>Mirpur, Dhaka-1216</div>
+      <div class="contact-item"><strong>Permanent Address</strong>Rangunia, Chattogram</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Sorban Tahura • Professional Portfolio
+</footer>
+
+</body>
+</html>
